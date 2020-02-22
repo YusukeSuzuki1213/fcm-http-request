@@ -1,0 +1,14 @@
+[tool.black]
+exclude = '''
+(
+    .env
+    | .env-sample
+    | .git
+    | .gitignore
+    | .Pipfile
+    | .Pipfile.lock
+    | service-account.json
+    | .flake8
+    | .pre-commit-config.yaml
+)
+'''

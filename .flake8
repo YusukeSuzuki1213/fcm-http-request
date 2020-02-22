@@ -1,0 +1,7 @@
+[flake8]
+exclude = .env, .env-sample, .git, .gitignore, Pipfile, Pipfile.lock, service-account.json, project.toml, .pre-commit-config.yaml
+// PEP8に準拠してないものは無視
+ignore = E203,W503,W504
+// 「black」では最大長が88なので、flake8もそれに合わせる
+max-line-length = 88
+
