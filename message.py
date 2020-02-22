@@ -29,7 +29,6 @@ def request_fcm(access_token):
             "data": {
                 "title": "タイトル",
                 "body": "ボディ",
-                "image": "https://bellard.org/bpg/2.png",
                 "uri": "sosotown://index/search?hoge",
             }
         },
