@@ -19,19 +19,22 @@ def get_access_token():
 
 
 def request_fcm(access_token):
+
     headers = {
         "Authorization": "Bearer " + access_token,
         "Content-Type": "application/json",
     }
     payload = {
-        "message": {"token": settings.FIREBASE_DEVICE_TOKEN},
-        "android": {
-            "data": {
-                "title": "タイトル",
-                "body": "ボディ",
-                "uri": "sosotown://index/search?hoge",
-            }
-        },
+        "message": {
+            "token": settings.FIREBASE_DEVICE_TOKEN,
+            "android": {
+                "data": {
+                    "title": "タイトル",
+                    "body": "ボディ",
+                    "uri": "sosotown://index/search?hoge",
+                }
+            },
+        }
     }
 
     r = requests.post(URL, data=json.dumps(payload), headers=headers)
