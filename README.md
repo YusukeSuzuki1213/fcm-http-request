@@ -1,5 +1,6 @@
 ![](https://github.com/YusukeSuzuki1213/fcm-http-request/workflows/Lint/badge.svg)
 # fcm-http-request
+FCMを送信するクライアント
 ## Usage
 1. `$ git clone git@github.com:YusukeSuzuki1213/fcm-http-request.git`
 1. `$ pipenv install`
